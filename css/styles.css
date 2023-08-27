@@ -1,9 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list {
     list-style-type: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .button-hero {
@@ -16,6 +66,9 @@
     line-height: 1.5;        
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 button:hover,
@@ -29,8 +82,36 @@ body {
     background-color: #FFFFFF;
 }
 
+nav {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .address {
     font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    column-gap: 40px;
+} 
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    column-gap: 40px;
+}
+
+.logotype-header {
+    margin-right: 76px;
 }
 
 .logotype {
@@ -45,6 +126,11 @@ body {
 
 .logo-studio {
     color: #2E2F42;
+}
+
+.list-item {
+    display: flex;
+    margin-left: auto;
 }
 
 .menu-link {
@@ -76,6 +162,8 @@ body {
 
 .hero {
     background-color: #2E2F42;
+    text-align: center;
+
 }
 
 .hero-title {
@@ -84,7 +172,19 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.benefits-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.benefits-list-item {
+    width: calc ((100% - 3*24px) / 4);
 }
 
 .benefits-title {
@@ -97,6 +197,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -118,10 +219,18 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.team-title-list {
+    display: flex;
+    column-gap: 24px;
 }
 
 .team-title-item {
     background-color: #FFFFFF;
+    width: calc ((100% - 3*24px) / 4);
+    
 }
 .team-member-name {
     color: #2E2F42;
@@ -129,6 +238,9 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 
@@ -137,6 +249,20 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-item {
+    width: calc ((100% - 2*24px) / 3);
+    border: 1px solid #E7E9FC;
 }
 
 .portfolio-title {
@@ -147,6 +273,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .portfolio-name {
@@ -155,6 +282,9 @@ body {
     font-weight: 500;
     line-height: 1.2;    
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .portfolio-about {
@@ -162,6 +292,9 @@ body {
     font-size: 16px;    
     line-height: 1.5;    
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .footer-about {
@@ -177,4 +310,10 @@ body {
     font-size: 16px;        
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 16px;
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
