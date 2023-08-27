@@ -65,6 +65,15 @@ img {
     font-weight: 500;
     line-height: 1.5;        
     letter-spacing: 0.04em;
+
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: #4D5AE5;
     padding: 16px 32px;
     border-radius: 4px;
@@ -82,10 +91,13 @@ body {
     background-color: #FFFFFF;
 }
 
-nav {
+.header-page {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.nav {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    align-items: center;
 }
 
 .address {
@@ -108,6 +120,8 @@ nav {
 .menu {
     display: flex;
     column-gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logotype-header {
@@ -163,7 +177,7 @@ nav {
 .hero {
     background-color: #2E2F42;
     text-align: center;
-
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -172,7 +186,7 @@ nav {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -180,7 +194,7 @@ nav {
 
 .benefits-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .benefits-list-item {
@@ -258,11 +272,13 @@ nav {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .portfolio-list-item {
     width: calc ((100% - 2*24px) / 3);
-    border: 1px solid #E7E9FC;
+    
 }
 
 .portfolio-title {
@@ -276,6 +292,10 @@ nav {
     margin-bottom: 72px;
 }
 
+.portfolio-name-about {
+    padding: 32px 16px;
+}
+
 .portfolio-name {
     color: #2E2F42;
     font-size: 20px;    
@@ -283,8 +303,8 @@ nav {
     line-height: 1.2;    
     letter-spacing: 0.02em;
     margin-top: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-bottom: 8px;
+   
 }
 
 .portfolio-about {
@@ -293,12 +313,13 @@ nav {
     line-height: 1.5;    
     letter-spacing: 0.02em;
     padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    
 }
 
 .footer-about {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-studio-footer {
@@ -310,10 +331,9 @@ nav {
     font-size: 16px;        
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 16px;
 }
 
-.footer-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.logotype-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
